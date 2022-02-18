@@ -14,6 +14,7 @@ The datasets are taken from various trusted sources and implemented well into on
 make a machine learning model and give the results.
 
 Diseases which the model will be able to predict are:
+
 ● Cardiovascular Disease
 ● Heart attack
 ● Arrhythmia
