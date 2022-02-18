@@ -1,2 +1,22 @@
 # CVD-Analysis
 Cardiovascular Disease Analysis
+
+The goal of a health system is to protect and improve the health of people. Ministries and NGOs play a vital
+role in financing, managing resources and advancement of healthcare.
+A differential diagnosis (DDx) is a method of analysis of a patient's history and physical examination to
+arrive at a diagnosis that best fits the symptoms presented by the patient.
+It is a systematic diagnostic method used to identify the presence of a disease where multiple alternatives
+are possible. This method usually employs algorithms, similar to the process of elimination by using
+evidence such as symptoms, patient history and lab reports.
+Health Care DDx system is an effective diagnostic tool designed to give precise and quick results thus
+saving a lot of time for medical personnel. The concept includes many different cardiovascular diseases.
+The datasets are taken from various trusted sources and implemented well into one dataset which is used to
+make a machine learning model and give the results.
+
+Diseases which the model will be able to predict are:
+● Cardiovascular Disease
+● Heart attack
+● Arrhythmia
+● Stroke
+● CAD
+● Blood Pressure
