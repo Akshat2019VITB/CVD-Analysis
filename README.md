@@ -15,9 +15,9 @@ make a machine learning model and give the results.
 
 Diseases which the model will be able to predict are:
 
-● Cardiovascular Disease
-● Heart attack
-● Arrhythmia
-● Stroke
-● CAD
-● Blood Pressure
+##### ● Cardiovascular Disease
+##### ● Heart attack
+##### ● Arrhythmia
+##### ● Stroke
+##### ● CAD
+##### ● Blood Pressure
