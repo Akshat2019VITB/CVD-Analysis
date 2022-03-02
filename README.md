@@ -19,3 +19,6 @@ Diseases which the model will be able to predict are:
 ##### ● Hypertension
 ##### ● Type II Diabetes
 ##### ● Stroke
+
+The Website folder contains the templates and pages for the website as well as the flask .py file for integration with the ML model with the dataset we made.
+The notebook .ipynb file is also updated and contains the process of feature selection and model evaluation.
