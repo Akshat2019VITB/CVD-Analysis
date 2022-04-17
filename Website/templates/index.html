@@ -5,72 +5,166 @@
 {%endblock%}
 
 
-{% block body%} 
-<form action="/" method="POST" id = "myform">
-    <label for="age">Age</label>
-    <input type="text" id="age" name="age"> <br>
-<P>Please enter your gender</P>
-    
+{% block body%}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <label for="gender">gender</label>
-    <input type="text" id="gender" name="gender"> <br>
+<div class="container-sm">
+    <form action="/" method="POST" id="myform">
+        <P style=" color: green;
+    text-indent: 30px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align:center">Cardiovascular Disease Analysis</P>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1" for="age">Age</span>
 
-
-    <label for="Height">Height</label>
-    <input type="text" id="height" name="height"> <br>
-
-    <label for="weight">Weight</label>
-    <input type="text" id="weight" name="weight"> <br>
-
-    <label for="BMI">BMI</label>
-    <input type="text" id="BMI" name="BMI"> <br>
-
-
-
-    <label for="SystolicBP">Systolic BP</label>
-    <input type="text" id="Systolic" name="SystolicBP"> <br>
-
-    <label for="diastolicBP">diastolicBP</label>
-    <input type="text" id="diastolic" name="diastolicBP"> <br>
-
-    <label for="MAP">map</label>
-    <input type="text" id="map" name="map"> <br>
-
-        
+                        <input type="text" id="age" name="age">
+                    </div>
+                </div>
+                <br>
 
 
-    <label for="heartrate">heart rate</label>
-    <input type="text" id="heartrate" name="heartrate"> <br>
+                <div class="col">
 
-    <label for="maxheartrate">max heart rate</label>
-    <input type="text" id="maxheartrate" name="maxheartrate"> <br>
+                    <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1"
+                            for="gender">Gender</span>
+                        <input type="text" id="gender" name="gender"> <br>
+                    </div>
+                </div>
 
-
-
-    <label for="FBS">fasting blood sugar</label>
-    <input type="text" id="FBS" name="FBS"> <br>
-
-    <label for="Cholestrol">Cholestrol<label>
-    <input type="text" id="Cholestrol" name="Cholestrol"> <br>
+            </div>
+        </div>
 
 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1"
+                            for="Height">Height</span>
+                        <input type="text" id="height" name="height"></div>
+                </div>
+                <br>
+                <div class="col">
 
-    <p>Do you smoke?</p>
-    <label for="smoke">smoke<label>
-    <input type="text" id="smoke" name="smoke"> <br>
-    
-    <p>Do you drink?</p>
-    <label for="drink">drink<label>
-    <input type="text" id="drink" name="drink"> <br>
-        
+                    <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1"
+                            for="weight">Weight</span>
+                        <input type="text" id="weight" name="weight"> <br>
+                    </div>
+                </div>
+                <div class="col">
 
-    <p>Do you even lift?</p>
-    <label for="lift">lift<label>
-    <input type="text" id="lift" name="lift"> <br>
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="BMI">BMI</span>
+                        <input type="text" id="BMI" name="BMI">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
 
-    <input type="submit" value="submit">
 
-   </form>
 
-   <div id = "result_value"><h2>{{prediction_text}}</h2></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="SystolicBP">Systolic
+                            BP</span>
+                        <input type="text" id="Systolic" name="SystolicBP"> </div>
+                </div><br>
+
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="diastolicBP">DiastolicBP</span>
+                        <input type="text" id="diastolic" name="diastolicBP"> </div>
+                </div><br>
+
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="MAP">Map</span>
+                        <input type="text" id="map" name="map"> </div><br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="heartrate">Heart
+                            rate</span>
+                        <input type="text" id="heartrate" name="heartrate"> </div>
+                </div><br>
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="maxheartrate">Max heart
+                            rate</span>
+                        <input type="text" id="maxheartrate" name="maxheartrate"></div>
+                </div>
+            </div><br>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col">
+        <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1" for="FBS">Fasting blood
+                sugar</span>
+            <input type="text" id="FBS" name="FBS"> </div><br>
+        </div>
+        <div class="col">
+        <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                for="Cholestrol">Cholestrol</span>
+            <input type="text" id="Cholestrol" name="Cholestrol"></div> <br>
+        </div>
+    </div>
+  </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1" for="smoke">Do you
+                            smoke</span>
+                        <input type="text" id="smoke" name="smoke"> </div>
+                </div><br>
+
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1" for="drink">Do you
+                            drink?</span>
+                        <input type="text" id="drink" name="drink"> </div>
+                </div><br>
+
+
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1" for="lift">Do you
+                            even
+                            lift?</span>
+                        <input type="text" id="lift" name="lift"> </div><br>
+                </div>
+            </div>
+        </div>
+
+        <div style="display:flex;
+        align-items:center;
+        justify-content:center;"><input type="submit" style="background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer; border-radius: 5px; " value="Submit"></div>
+
+    </form>
+</div>
+
+<div id="result_value">
+    <h2>{{prediction_text}}</h2>
+</div>
 {%endblock%}
