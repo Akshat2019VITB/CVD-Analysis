@@ -21,7 +21,16 @@
                 <div class="col">
                     <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1" for="age">Age</span>
 
-                        <input type="text" id="age" name="age">
+                        <input type="text" id="age" name="age" onchange="maxhrate()">
+                        <script>
+                            function maxhrate() {
+                                var maxhr =  220 - document.getElementById('age')
+                                    .value;
+                                
+                                console.log(maxhr);
+                                document.getElementById('maxheartrate').setAttribute('value', maxhr);
+                            }
+                        </script>
                     </div>
                 </div>
                 <br>
@@ -43,15 +52,25 @@
             <div class="row">
                 <div class="col">
                     <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1"
-                            for="Height">Height</span>
+                            for="Height">Height(m)</span>
                         <input type="text" id="height" name="height"></div>
                 </div>
                 <br>
                 <div class="col">
 
                     <div class="input-group mb-3"> <span class="input-group-text" id="basic-addon1"
-                            for="weight">Weight</span>
-                        <input type="text" id="weight" name="weight"> <br>
+                            for="weight">Weight(kg)</span>
+                        <input type="text" id="weight" name="weight" onchange="autofill()"> <br>
+                        <script>
+                            function autofill() {
+                                var result = 0;
+                                var square = document.getElementById('height').value * document.getElementById('height')
+                                    .value;
+                                result = document.getElementById('weight').value / square;
+                                console.log(result);
+                                document.getElementById('BMI').setAttribute('value', result);
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="col">
@@ -59,6 +78,7 @@
                     <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
                             for="BMI">BMI</span>
                         <input type="text" id="BMI" name="BMI">
+
                     </div>
                 </div>
             </div>
@@ -71,20 +91,29 @@
             <div class="row">
                 <div class="col">
                     <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
-                            for="SystolicBP">Systolic
-                            BP</span>
+                            for="SystolicBP">Systolic BP</span>
                         <input type="text" id="Systolic" name="SystolicBP"> </div>
                 </div><br>
 
                 <div class="col">
                     <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
                             for="diastolicBP">DiastolicBP</span>
-                        <input type="text" id="diastolic" name="diastolicBP"> </div>
+                        <input type="text" id="diastolic" name="diastolicBP" onchange="MAPc()"> 
+                        <script>
+                            function MAPc() {
+                                
+                                var result = (document.getElementById('Systolic').value * 0.33) + (document.getElementById('diastolic').value *0.66);
+                                
+                                console.log(result);
+                                document.getElementById('map').setAttribute('value', result);
+                            }
+                        </script>
+                    </div>
                 </div><br>
 
                 <div class="col">
                     <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
-                            for="MAP">Map</span>
+                            for="MAP">MAP</span>
                         <input type="text" id="map" name="map"> </div><br>
                 </div>
             </div>
@@ -99,7 +128,8 @@
                     <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
                             for="heartrate">Heart
                             rate</span>
-                        <input type="text" id="heartrate" name="heartrate"> </div>
+                        <input type="text" id="heartrate" name="heartrate">
+                     </div>
                 </div><br>
                 <div class="col">
                     <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
@@ -112,18 +142,19 @@
 
         <div class="container">
             <div class="row">
-              <div class="col">
-        <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1" for="FBS">Fasting blood
-                sugar</span>
-            <input type="text" id="FBS" name="FBS"> </div><br>
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1" for="FBS">Fasting
+                            blood
+                            sugar</span>
+                        <input type="text" id="FBS" name="FBS"> </div><br>
+                </div>
+                <div class="col">
+                    <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
+                            for="Cholestrol">Cholestrol</span>
+                        <input type="text" id="Cholestrol" name="Cholestrol"></div> <br>
+                </div>
+            </div>
         </div>
-        <div class="col">
-        <div class="input-group mb-3"> <span class="input-group-text" span="basic-addon1"
-                for="Cholestrol">Cholestrol</span>
-            <input type="text" id="Cholestrol" name="Cholestrol"></div> <br>
-        </div>
-    </div>
-  </div>
 
 
         <div class="container">
