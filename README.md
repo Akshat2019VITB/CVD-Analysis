@@ -10,8 +10,9 @@ are possible. This method usually employs algorithms, similar to the process of 
 evidence such as symptoms, patient history and lab reports.
 Health Care DDx system is an effective diagnostic tool designed to give precise and quick results thus
 saving a lot of time for medical personnel. The concept includes many different cardiovascular diseases.
-The datasets are taken from various trusted sources and implemented well into one dataset which is used to
-make a machine learning model and give the results.
+The dataset was generated using a base dataset which was then enhanced to form a much bigegr dataset which was then used to
+make a machine learning model and give the results. The enhancement was done after rigorous research from following various
+papers published online and other trusted sources.
 
 Diseases which the model will be able to predict are:
 
