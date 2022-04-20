@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HealthDiagnosis</string>
+    <string name="message">Hi! I am doctor Ben.</string>
+    <string name="message2">Please Enter your details correctly for accurate prediction</string>
+    <string name="message3">Follow Safe Hygiene</string>
+</resources>
