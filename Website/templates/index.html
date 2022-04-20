@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{%endblock%}
+
+
+{% block body%} 
+<form action="/" method="POST" id = "myform">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age"> <br>
+    
+    <label for="gender">gender</label>
+    <input type="text" id="gender" name="gender"> <br>
+
+    <label for="Height">Height</label>
+    <input type="text" id="height" name="height"> <br>
+
+    <label for="weight">Weight</label>
+    <input type="text" id="weight" name="weight"> <br>
+
+    <label for="BMI">BMI</label>
+    <input type="text" id="BMI" name="BMI"> <br>
+
+    <label for="SystolicBP">Systolic BP</label>
+    <input type="text" id="Systolic" name="SystolicBP"> <br>
+
+    <label for="diastolicBP">diastolicBP</label>
+    <input type="text" id="diastolic" name="diastolicBP"> <br>
+
+    <label for="MAP">map</label>
+    <input type="text" id="map" name="map"> <br>
+
+    <label for="Cholestrol">Cholestrol<label>
+    <input type="text" id="Cholestrol" name="Cholestrol"> <br>
+
+    <label for="heartrate">heart rate</label>
+    <input type="text" id="heartrate" name="heartrate"> <br>
+
+    <label for="maxheartrate">max heart rate</label>
+    <input type="text" id="maxheartrate" name="maxheartrate"> <br>
+
+    <label for="FBS">fasting blood sugar</label>
+    <input type="text" id="FBS" name="FBS"> <br>
+
+    <p>Do you smoke?</p>
+    <label for="smoke">smoke<label>
+    <input type="text" id="smoke" name="smoke"> <br>
+    
+    <p>Do you drink?</p>
+    <label for="drink">drink<label>
+    <input type="text" id="drink" name="drink"> <br>
+
+    <p>Do you even lift?</p>
+    <label for="lift">lift<label>
+    <input type="text" id="lift" name="lift"> <br>
+
+    <input type="submit" value="submit">
+
+   </form>
+
+   <div id = "result_value"><h2>{{prediction_text}}</h2></div>
+{%endblock%}
+<script src="{{url_for('static', filename='main.js')}}"></script>
